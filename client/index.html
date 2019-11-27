@@ -49,7 +49,7 @@
     <script>
     $(document).ready(function(){
       var chat = [];
-      var socket = io('http://35.200.147.73:3000');
+      var socket = io('https://anonchattt.herokuapp.com/');
       socket.emit('chatRequest', {});
       socket.on('getChat', function (data) {
         console.log(data);
